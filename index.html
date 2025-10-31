@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Me</title>
+    <script src="https://unpkg.com/alpinejs" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#B5CFB7] flex items-center justify-center min-h-screen">
+    <div class="p-8 bg-white shadow-xl rounded-lg flex flex-col justify-between w-80 h-96">
+        <div x-data="
+            {quote:'Life is what happens when you\'re busy making other plans.',
+            view: true}
+        ">
+            <p x-show="view" class="text-black text-2xl text-center">
+                <span x-text="quote"></span>
+            </p>
+        </div>
+        <button class="rounded-xl bg-blue-600 hover:bg-blue-400 px-4 py-2 font-semibold mx-auto">Surpirse Me</button>
+    </div>
+</body>
+</html>
